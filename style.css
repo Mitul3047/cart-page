@@ -1,0 +1,101 @@
+body{
+    margin: 0px 30px;
+}
+.form-control{
+    border-radius: 0px;
+}
+#coupon{
+    border: 1px solid rgba(128, 128, 128, 0.377);
+}
+.row{
+    margin-bottom: 100px;
+}
+.title{
+    height: 200px;
+}
+i a{
+    text-decoration: none;
+    color: gray;
+}
+.categories{
+    margin: 40px 30px;
+}
+.categories img{
+    height: 137px;
+}
+.dot {
+    height: 20px;
+    width: 20px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  .inbtn{
+    margin-top: 50px;
+  }
+.details{
+    margin: 0px 10px;
+
+  }
+.cost{
+    border: 3px solid black;
+}
+.cost h1{
+    padding: 12px 10px;
+    border-bottom: 3px solid black;
+    font-size: 1.5rem;
+}
+.form-control{
+    margin-bottom: 20px;
+    border: 2px solid gray;
+
+}
+li{
+    list-style: none;
+    margin-right: 15px;
+}
+
+.cart{
+    border-radius: 0px;
+    margin-left: 70px;
+    width: 160px;
+}
+
+.price{
+    width: 100%;
+    border-radius: 0px;
+}
+
+.tk{
+    font-weight: bold
+}
+.form-check-input:checked {
+    background-color: #4a5462;
+    border-color: #4a5462;
+    
+}
+.dbox{
+    margin-left: 30px;
+}
+.dbox h6{
+    background-color: #4a5462;
+    margin-right: 12px;
+    padding: 1px 7px;
+}
+
+.details h3{
+ font-size: 1.5rem;
+}
+
+.details h4{
+ font-size: 1rem;
+}
+.details h6{
+ font-size: 0.8rem;
+}
+.details h3 h4 h6{
+    font-weight: bold;
+}
+#del{
+    width: 100%;
+}

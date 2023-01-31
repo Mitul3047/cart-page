@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="title d-flex align-items-center justify-content-center">
+            <h1>Cart</h1>
+        </div>
+        <div class="continue">
+            <i class="bi bi-chevron-compact-left"><a href=""><img src="left.svg" alt="">Continue Shopping</a></i>
+        </div>
+    </header>
+    <hr>
+    <section>
+        <div class="row">
+            <div class="col-md-8">
+                <div class="categories d-flex justify-content-between">
+                    <div>
+                        <img src="./1.jpg" class="rounded float-start" alt="...">
+                    </div>
+                    <div class="details">
+                        <h3>Cotton Kurtty<span class="badge bg-secondary">New</span></h3>
+                        <h4>Color: off white</h4>
+                        <span class="dot"></span>
+                        <h6>Size: M</h6>
+                    </div>
+                        <div>
+                            <div class="input-group w-auto inbtn ">
+                                <input type="button" value="-"
+                                    class="button-minus border rounded-circle  icon-shape icon-sm mx-1 "
+                                    data-field="quantity">
+                                <input type="number" step="1" max="10" value="1" name="quantity"
+                                    class="quantity-field border-0 text-center w-25">
+                                <input type="button" value="+"
+                                    class="button-plus border rounded-circle icon-shape icon-sm " data-field="quantity">
+                            </div>
+                        </div>
+                    <div>
+                        <h6 class="taka">&#2547; 1600</h6>
+                        
+                    </div>
+                </div>
+                <hr>
+                <div class="categories d-flex justify-content-between">
+                    <div>
+                        <img src="./1.jpg" class="rounded float-start" alt="...">
+                    </div>
+                    <div class="details">
+                        <h3>Kurtty (Gray)</h3>
+                        <h4>Color: off white</h4>
+                        <span class="dot"></span>
+                        <h6>Size: M</h6>
+                    </div>
+                        <div>
+                            <div class="input-group w-auto inbtn ">
+                                <input type="button" value="-"
+                                    class="button-minus border rounded-circle  icon-shape icon-sm mx-1 "
+                                    data-field="quantity">
+                                <input type="number" step="1" max="10" value="1" name="quantity"
+                                    class="quantity-field border-0 text-center w-25">
+                                <input type="button" value="+"
+                                    class="button-plus border rounded-circle icon-shape icon-sm " data-field="quantity">
+                            </div>
+                        </div>
+                    <div>
+                        <h6 class="taka">&#2547; 1600</h6>
+
+                    </div>
+                </div>
+                <hr>
+                
+                <button type="button" class="btn btn-secondary cart">Update Cart</button>
+            </div>
+            <div class="col-md-4  submit">
+                <div class="cost">
+                    <h1>Cost Total:</h1>
+                    <div class="container">
+                        
+                        <input class="form-control" type="text" placeholder="Nmae">
+                        <input class="form-control" type="email" placeholder="E-mail">
+                        <div class="dropdown de" id="country-codes">
+                            <!-- <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown">
+                                <span class="value">+88</span>
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#" value="+47">(+47)</a></li>
+                                <li><a href="#" value="+46">(+46)</a></li>
+                                <li><a href="#" value="+79">(+79)</a></li>
+                            </ul> -->
+                            <input class="form-control"  type="number">
+                        </div>
+                        <input class="form-control" id="coupon" type="text">
+                        <button type="button" class="btn btn-secondary price">APPLY COUPON</button>
+                        <hr>
+                    </div>
+                    <div class="price d-flex justify-content-between">
+                        <div>
+                            <ul>
+                                <li class="tk">Subtotal</li>
+                                <li class="tk">Advance</li>
+                                <li class="tk">Discount</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul>
+                                <li>&#2547; 1850</li>
+                                <li>&#2547; 600</li>
+                                <li>&#2547; 0</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="container delivery">
+                        <div class="place">
+                        
+                            <div class="d-flex">
+                                <div class="p-2 w-100"><input class="form-check-input" type="radio"
+                                        name="flexRadioDefault" id="flexRadioDefault1">
+                                    <label class="form-check-label tk" for="flexRadioDefault1">
+                                        DELIVERY INSIDE DHAKA
+                                    </label>
+                                </div>
+                                <div class="p-2 flex-shrink-1">
+                                    <h6 class="taka">&#2547;60</h6>
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <div class="p-2 w-100"><input class="form-check-input" type="radio"
+                                        name="flexRadioDefault" id="flexRadioDefault1">
+                                    <label class="form-check-label tk" for="flexRadioDefault1">
+                                        DELIVERY OUTSIDE DHAKA
+                                    </label>
+                                    <div class=" container  dbox d-flex align-items-center">
+                                        <h6>Delivery</h6>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="p-2 flex-shrink-1">
+                                    <h6 class="taka">&#2547;150</h6>
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <div class="p-2 w-100"><input class="form-check-input" type="radio"
+                                        name="flexRadioDefault" id="flexRadioDefault1">
+                                    <label class="form-check-label tk" for="flexRadioDefault1">
+                                        DELIVERY IN ANOTHER COUNTRY
+                                    </label>
+                                    <div class=" container  dbox d-flex align-items-center">
+                                        <h6>Delivery</h6>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="p-2 flex-shrink-1">
+                                    <h6 class="taka">&#2547;3500</h6>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="d-flex bd-highlight">
+                                <div class="p-2 w-100 bd-highlight">Total</div>
+                                <div class="p-2 flex-shrink-1 bd-highlight"> &#2547;2450</div>
+                              </div>
+                              <div style="margin-bottom: 20px;">
+                                <button type="button" class="btn btn-secondary price">ODER PLACE</button>
+                            </div>
+                               
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
